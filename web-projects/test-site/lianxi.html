@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function myMath (min,max) {
+        minCeiled = Math.ceil(min);
+        maxFloored = Math.floor(max);
+        return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+    }
+    var num = myMath(1,10);
+    console.log(num);
+    var num1 = prompt('请输入你猜测的数字:')
+    while (num != num1) {
+        alert('不好意思，您猜错了，请继续输入！');
+        num1 = prompt('请重新输入您新猜测的数字：')
+    }
+    alert('恭喜您猜对了');
+    
+</script>
+<body>
+    
+</body>
+</html>
